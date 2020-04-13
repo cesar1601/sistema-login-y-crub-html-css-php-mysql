@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    
+    font-family: 'open sans';
+    font-size: 16px;
+    padding: 20px;
+    
+}
+
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../imagenes/fondo2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #ffff;
+    text-align: center;
+}
+
+header .textos{
+    margin-top: 200px;
+}
+
+header .titulo{
+    font-size: 85px;
+}
+
+header .subtitulo{
+    font-size: 42px;
+    font-size: 50;
+    margin-bottom: 32px;
+}
+
+header .boton{
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    text-decoration: none; 
+    
+}
+
+.sesgoabajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #ffff transparent;
+}
+
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0 ;
+    border-style: solid;
+    border-color: #ffff transparent transparent  transparent;
+}
+
+.contenedor-all{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    overflow: hidden;
+}
+
+.contenedor-form{
+    width: 80%;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.logo{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.titulo-login{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    color: #e30f87;
+    font-size: 16px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    color: #ffffff;
+    border: 0px;
+    background: linear-gradient(#D34633,#F22C81);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover{
+    background: linear-gradient(#F22C81,#D34633);
+}
+
+.text-footer{
+    display: block;
+    margin: 100px;
+    text-align: center;
+    color:#7a7a7a;
+    font-weight: 500;
+}
+.text-footer a{
+    color: #5095C9;
+    font-weight: 500;
+}
+
+.contenedor-texto-login{
+    width: 100%;
+    background-image: url(../imagenes/fondo3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    position: relative;
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#F22C81,#D34633);
+    opacity: 0.8;
+
+}
+
+.titulo-descripcion{
+    position: relative;
+    top: 80px;
+    color: white;
+    font-weight: 300px;
+    font-size: 40px;
+}
+
+.texto-descripcion{
+    position: relative;
+    top: 110px;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+    
+.error{
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+.barra__buscador{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .input__text{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #848688;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    max-width: 30%;
+    margin-right: 10px;
+    outline: medium none;
+}
+
+
+form .input__text:focus{
+    border: 1px solid #1b743c;
+}
+form .form-group{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+form .form-group .input__text{
+    max-width: 45% !important;
+}
+
+
+form .btn{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    background: rgb(3, 113, 163);
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    outline: medium none;
+    cursor: pointer;
+}
+.btn__nuevo{
+    float: right;
+    background: #1b743c !important;
+}
+
+.btn__group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn__primary{
+    background: rgb(3, 113, 163);
+}
+.btn__danger{
+    background: #8a0505 !important;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table .head{
+    background: rgb(3, 113, 163);
+}
+table .head td{
+    color: #fff;
+    font-family: 'Arial',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+table tr td{
+    border:1px solid #ccc;
+    padding: 7px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn__update{
+    display: inline-block;
+    font-size: 14px;
+    background: #1b743c;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn__delete{
+    display: inline-block;
+    font-size: 14px;
+    background: #8a0505;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.logo-bienvenida{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+
+.titulo-bienvenida{
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.cerrar-sesion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+  
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.sesgoabajo-unico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+footer{
+    background: #2c3e50;
+    height: auto;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+} 
+
+.subtitulo-footer{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.fondo{
+    height: 300px;
+    position: relative;
+    background: url(../imagenes/fondo.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+input[type="search"], input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 37, .7);
+    margin-bottom: 16px;
+    border-top: 1px solid  rgba(37, 37, 37, .7);
+
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    border-top: 5px solid  rgb(250, 249, 249);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 37, .7);
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+

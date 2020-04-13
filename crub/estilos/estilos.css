@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../imagenes/portada.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #ffff;
+    text-align: center;
+}
+
+header .textos{
+    margin-top: 150px;
+}
+
+header .titulo{
+    font-size: 85px;
+}
+
+header .subtitulo{
+    font-size: 42px;
+    font-size: 300;
+    margin-bottom: 32px;
+}
+
+header .boton{
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+     
+    
+}
+
+.sesgoabajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #ffff transparent;
+}
+
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0 ;
+    border-style: solid;
+    border-color: #ffff transparent transparent  transparent;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+    
+}
+ 
+.Sobre-nosotros{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan{
+    font-size: 24px;
+    width: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo{
+    margin-bottom: 13px;
+    font-weight: 300px;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.galeria{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+}
+
+.imagenes{
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+}
+
+.encima h2{
+    position: relative;
+    top: 45%;
+    text-align:center;
+    color: #ffff;
+}
+
+.encima div{
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #ffff;
+    margin: auto;
+}
+
+.cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.829);
+
+}
+
+.cards img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.fondo{
+    height: 900px;
+    position: relative;
+    background: url(../imagenes/fondo1.jpg);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+.sesgoabajo-unico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+footer{
+    background: #2c3e50;
+    height: auto;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 56px;
+} 
+
+.subtitulo-footer{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 64px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"], textarea:focus{
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 37, .7);
+    margin-bottom: 16px;
+    border-top: 1px solid  rgba(37, 37, 37, .7);
+
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="submit"]:focus{
+    border-top: 5px solid  rgb(250, 249, 249);
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 37, .7);
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+
+input[type="submit"]{
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    background: rgba(37, 37, 37, .7);
+    width: 96px;
+
+}
